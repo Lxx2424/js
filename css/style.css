@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.dropWrapper {
+  border: 1px solid #ababab;
+  padding: 50px;
+  box-shadow: inset 0px 0px 20px 25px #ccc; }
+  .dropWrapper .drop {
+    padding: 50px;
+    border: 1px dashed brown;
+    text-align: center;
+    color: #ccc; }
+    .dropWrapper .drop p {
+      transition: all 0.2s ease-in-out;
+      font-size: 1.5em; }
+    .dropWrapper .drop i {
+      opacity: 0;
+      visibility: hidden; }
+    .dropWrapper .drop.active .drop {
+      background: green; }
+    .dropWrapper .drop.active p {
+      transform: translateY(-50px); }
+    .dropWrapper .drop.active i {
+      opacity: 1;
+      visibility: visible;
+      color: #ffff;
+      font-size: 1.5em;
+      animation: moveDown .9s infinite; }
+@keyframes moveDown {
+  from {
+    transform: translateY(-20px); }
+  to {
+    transform: translateY(20px); } }
+  .dropWrapper .mainTable thead {
+    background: red;
+    color: #FFFF; }
+
+/*# sourceMappingURL=style.css.map */
